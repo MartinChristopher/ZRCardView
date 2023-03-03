@@ -1,0 +1,6 @@
+framework module ZRCardView {
+  umbrella header "ZRCardView-umbrella.h"
+
+  export *
+  module * { export * }
+}

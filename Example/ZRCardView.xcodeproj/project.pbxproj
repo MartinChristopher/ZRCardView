@@ -62,11 +62,11 @@
 		71719F9E1E33DC2100824A3D /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		7CA5A4813F805F707C77CE4A /* Pods-ZRCardView_Example.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRCardView_Example.debug.xcconfig"; path = "Target Support Files/Pods-ZRCardView_Example/Pods-ZRCardView_Example.debug.xcconfig"; sourceTree = "<group>"; };
 		873B8AEA1B1F5CCA007FD442 /* Main.storyboard */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.storyboard; name = Main.storyboard; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
-		950918576A6633158DA25342 /* ZRCardView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; name = ZRCardView.podspec; path = ../ZRCardView.podspec; sourceTree = "<group>"; };
+		950918576A6633158DA25342 /* ZRCardView.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = ZRCardView.podspec; path = ../ZRCardView.podspec; sourceTree = "<group>"; xcLanguageSpecificationIdentifier = xcode.lang.ruby; };
 		9EAE85A9097AE01D41C32811 /* Pods-ZRCardView_Tests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRCardView_Tests.debug.xcconfig"; path = "Target Support Files/Pods-ZRCardView_Tests/Pods-ZRCardView_Tests.debug.xcconfig"; sourceTree = "<group>"; };
-		BC1A6D726DCB3F4F5804B552 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
+		BC1A6D726DCB3F4F5804B552 /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
 		C8AC92FEAF1E6B2423E83946 /* Pods-ZRCardView_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-ZRCardView_Tests.release.xcconfig"; path = "Target Support Files/Pods-ZRCardView_Tests/Pods-ZRCardView_Tests.release.xcconfig"; sourceTree = "<group>"; };
-		DF1AFEFF970787436DF00D47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; name = README.md; path = ../README.md; sourceTree = "<group>"; };
+		DF1AFEFF970787436DF00D47 /* README.md */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = net.daringfireball.markdown; name = README.md; path = ../README.md; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -193,7 +193,6 @@
 				9EAE85A9097AE01D41C32811 /* Pods-ZRCardView_Tests.debug.xcconfig */,
 				C8AC92FEAF1E6B2423E83946 /* Pods-ZRCardView_Tests.release.xcconfig */,
 			);
-			name = Pods;
 			path = Pods;
 			sourceTree = "<group>";
 		};
@@ -258,6 +257,7 @@
 			developmentRegion = English;
 			hasScannedForEncodings = 0;
 			knownRegions = (
+				English,
 				en,
 				Base,
 			);
