@@ -12,7 +12,7 @@
 
 @property (nonatomic, assign) BOOL isBack;
 
-- (instancetype)initWithFrame:(CGRect)frame front:(UIView *)front reverse:(UIView *)reverse;
+- (instancetype)initWithFrame:(CGRect)frame front:(UIView *)front reverse:(UIView *)reverse complete:(void(^)(BOOL))complete;
 
 - (void)animationToFront;
 

@@ -14,17 +14,19 @@ static NSTimeInterval CardDuration = 0.5;
 
 @property (nonatomic, strong) UIView *frontView;
 @property (nonatomic, strong) UIView *reverseView;
+@property (nonatomic, copy) void(^complete)(BOOL);
 
 @end
 
 @implementation ZRCardView
 
-- (instancetype)initWithFrame:(CGRect)frame front:(UIView *)front reverse:(UIView *)reverse {
+- (instancetype)initWithFrame:(CGRect)frame front:(UIView *)front reverse:(UIView *)reverse complete:(void(^)(BOOL))complete {
     self = [super initWithFrame:frame];
     if (self) {
         self.isBack = true;
         self.frontView = front;
         self.reverseView = reverse;
+        self.complete = complete;
         UITapGestureRecognizer *tap = [[UITapGestureRecognizer alloc] initWithTarget:self action:@selector(tapEvent)];
         
         [self addSubview:front];
@@ -50,6 +52,7 @@ static NSTimeInterval CardDuration = 0.5;
         self.reverseView.hidden = YES;
     } completion:^(BOOL finished) {
         self.isBack = NO;
+        self.complete(self.isBack);
     }];
 }
 
@@ -59,6 +62,7 @@ static NSTimeInterval CardDuration = 0.5;
         self.reverseView.hidden = NO;
     } completion:^(BOOL finished) {
         self.isBack = YES;
+        self.complete(self.isBack);
     }];
 }
 

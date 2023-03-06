@@ -1,5 +1,5 @@
 PODS:
-  - ZRCardView (0.0.1)
+  - ZRCardView (0.0.2)
 
 DEPENDENCIES:
   - ZRCardView (from `../`)
@@ -9,7 +9,7 @@ EXTERNAL SOURCES:
     :path: "../"
 
 SPEC CHECKSUMS:
-  ZRCardView: 4fc0bc22817b8fda8eac8f6aaac29a6dbd2b83f1
+  ZRCardView: 3229153dac0b996b0018c8e4b338a48444049e4f
 
 PODFILE CHECKSUM: 19d49733a72ebdf1a562de3d27df587b0935c234
 
